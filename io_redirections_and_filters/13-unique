@@ -1,0 +1,3 @@
+#!/bin/bash
+sort | uniq -u
+cat list | ./13-unique
