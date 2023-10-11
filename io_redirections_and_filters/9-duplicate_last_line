@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1 iacta | dd of=iacta conv=notrunc seek=$(($(wc -l < iacta) + 1))
+echo "$last_line" >> iacta
