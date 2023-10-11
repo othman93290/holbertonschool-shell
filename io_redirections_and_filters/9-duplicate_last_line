@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -i '$!N;$s/\(.*\)\n/\1\n\1/' iacta
+tail -n 1 iacta | dd of=iacta conv=notrunc seek=$(($(wc -l < iacta) + 1))
