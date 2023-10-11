@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i '$!N;$s/\(.*\)\n/\1\n\1/' iacta
