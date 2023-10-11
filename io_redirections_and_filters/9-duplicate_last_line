@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1 iacta | tee -a iacta
+cat ./iacta | tail --lines-1 >> iacta
